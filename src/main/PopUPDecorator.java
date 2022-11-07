@@ -4,10 +4,13 @@ public abstract class PopUPDecorator implements PopUPInterface{
     private PopUPInterface inter;
     public PopUP prop;
 
+    public PopUPDecorator(PopUPInterface inter, PopUP prop) {
+        this.inter = inter;
+        this.prop = prop;
+    }
     public PopUPDecorator(PopUPInterface inter) {
         this.inter = inter;
     }
-
     public PopUPInterface getInter() {
         return inter;
     }
